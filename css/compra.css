@@ -1,0 +1,91 @@
+/**********************************************************
+************************** CORES **************************
+**********************************************************/
+
+/*CRIA VARIÁVEIS/SELETOR EM CSS E FACILITA O TRABALHO NA HORA DE DEFINIR CORES*/
+:root {
+    --preto: #000000;
+    --branco: #ffffff;
+    --cor1: #006658;
+    --cor2: #388575;
+    --cor3: #f6af42;
+    --cor4: #fff2cc;
+}
+
+/**********************************************************
+************************** CORPO **************************
+**********************************************************/
+
+/*PADRONIZAÇÕES BÁSICAS PARA TIRAR AS BORDAS DO SITE, DECORAÇÃO DE LINKS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*DEFINE UMA LARGURA MÁXIMA PARA O ELEMENTO*/
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/**********************************************************
+************************** QUEST **************************
+**********************************************************/
+label {
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 50px;
+    font-size: 26px;
+}
+
+.tabela-r1
+{
+    margin-left: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.tabela-r2 
+{
+    padding-left: 27px;
+    display: flex;
+    align-items: center;
+}
+
+.tabela-r3
+{
+    padding-left: 27px;
+}
+
+input[type=text], [type=email], textarea, select
+{
+    width: 60px 70px;
+    padding: 6px 20px;
+    margin: 7px 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid var(--cor1);
+}
+
+#enviar
+{
+    background-color: var(--cor1);
+    border: none;
+    border-radius: 10px;
+    width: 1090px;
+    color: var(--cor3);
+    padding: 16px 32px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.text-muted
+{
+    font-size: 10px;
+}

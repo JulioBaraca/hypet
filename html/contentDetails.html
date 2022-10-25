@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <!--GERADO JUNTO COM O HTML5-->
+
+        <!--
+            Esta tag indica ao browser que estamos usando o conjunto de caracteres Unicode, 
+        para exibir acentos e cedilha, por exemplo.
+        -->
+        <meta charset="UTF-8">
+
+        <!--
+            Esta tag força o IE a usar as definições de CSS mais recentes, e evita que ele quebre o visual, 
+            no Modo de Compatibilidade.
+        -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!--
+            A tag de viewport faz o site ocupar todo o espaço disponível na janela, seja em celulares, 
+            tablets ou PC’s. É a tag mais importante.
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--
+            DA NOME NA GUIA
+        -->
+        <title>Home | HYPET</title>
+
+        <!--CHAMAR O ICONE NA ABA-->
+        <link rel="shortcut icon" href="../img/logo1.p.ico" type="image/x-icon">
+        
+        <!--LINKS-->
+        <!--CHAMA CSS-->
+        <link rel="stylesheet" href="../css/contentDetails.css">
+        
+        <!--CHAMA FONTES DA INTERNET-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,300&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!--CHAMA ICONES DA INTERNET-->
+        <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+        <script src="https://kit.fontawesome.com/1ebc8411ae.js" crossorigin="anonymous"></script>
+
+        <!--CHAMA O SCRIPT Q FAZ RODAR OS SLIDERS-->
+        <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <div id="1"></div>
+        <script>
+            load("header.html");
+            function load(url)
+            {
+                req = new XMLHttpRequest();
+                req.open("GET", url, false);
+                req.send(null);
+                document.getElementById(1).innerHTML = req.responseText;
+            }
+        </script>
+            
+            <div id="containerProduct">
+                <!-- JS rendered code -->
+            </div>
+            
+        <script src="../js/contentDetails.js"></script>
+
+        <!-- FOOTER -->
+        <div id="4"></div>
+        <script>
+            load("footer.html");
+            function load(url)
+            {
+                req = new XMLHttpRequest();
+                req.open("GET", url, false);
+                req.send(null);
+                document.getElementById(4).innerHTML = req.responseText;
+            }
+        </script>
+    </body>
+</html>

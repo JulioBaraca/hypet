@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <!--GERADO JUNTO COM O HTML5-->
+
+        <!--
+            Esta tag indica ao browser que estamos usando o conjunto de caracteres Unicode, 
+        para exibir acentos e cedilha, por exemplo.
+        -->
+        <meta charset="UTF-8">
+
+        <!--
+            Esta tag força o IE a usar as definições de CSS mais recentes, e evita que ele quebre o visual, 
+            no Modo de Compatibilidade.
+        -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!--
+            A tag de viewport faz o site ocupar todo o espaço disponível na janela, seja em celulares, 
+            tablets ou PC’s. É a tag mais importante.
+        -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--
+            DA NOME NA GUIA
+        -->
+        <title>PAGAMENTO | HYPET</title>
+
+        <!--CHAMAR O ICONE NA ABA-->
+        <link rel="shortcut icon" href="../img/logo1.p.ico" type="image/x-icon">
+        
+        <!--
+            LINKS
+        -->
+        <!--
+            CHAMA CSS
+        -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/compra.css">
+        <link href="../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!--
+            CHAMA FONTES DA INTERNET
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,300&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <!--
+            CHAMA ICONES DA INTERNET
+        -->
+        <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+        <script src="https://kit.fontawesome.com/1ebc8411ae.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!-- CHAMA O HEADER -->
+        <div id="1"></div>
+        <!--script que carrega o html-->
+        <!--Função tem o nome url para dar load-->
+        <script>
+            load("header.html");
+            function load(url)
+            {
+                req = new XMLHttpRequest();
+                req.open("GET", url, false);
+                req.send(null);
+                document.getElementById(1).innerHTML = req.responseText;
+            }
+        </script>
+
+        <div class="max-width">
+        <div class="container">
+        <div class="py-2 text-center">
+        
+        <h2>Finalizar compra</h2>
+        <p class="lead">Finalize sua compra</p>
+        </div>
+    
+        </div>
+        <div class="col-md-8 order-md-1>">
+            <h4 class="mb-3">Dados Pessoais</h4>
+            <form class="needs-validation" novalidate>
+            <div class="checkout">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                <label for="firstName">Primeiro nome:</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    É necessário um nome VÁLIDO.
+                </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                <label for="lastName">Sobrenome: </label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    É necessário um sobrenome VÁLIDO.
+                </div>
+                </div>
+            </div>
+    
+            <div class="mb-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="email@exemplo.com">
+                <div class="invalid-feedback">
+                Insira um email VÁLIDO.
+                </div>
+            </div>
+    
+            <div class="mb-3">
+                <label for="address">Endereço</label>
+                <input type="text" class="form-control" id="address" placeholder="Rua X, Número X" required>
+                <div class="invalid-feedback">
+                INSIRA UM ENDEREÇO PARA RECEBER SUA ENCOMENDA.
+                </div>
+            </div>
+    
+            <div class="mb-3">
+                <label for="address2">Complemento <span class="text-muted">(Se necessário)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Apenas se for necessário">
+            </div>
+    
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                <label for="state">Estado</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                    <option value="">Selecione...</option>
+                    <option value="ac">Acre</option>
+                    <option value="al">Alagoas</option>
+                    <option value="ap">Amapá</option>
+                    <option value="am">Amazonas</option>
+                    <option value="ba">Bahia</option>
+                    <option value="ce">Ceará</option>
+                    <option value="df">Distrito Federal</option>
+                    <option value="es">Espírito Santo</option>
+                    <option value="go">Goiás</option>
+                    <option value="ma">Maranhão</option>
+                    <option value="mt">Mato Grosso</option>
+                    <option value="ms">Mato Grosso do Sul</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="pa">Pará</option>
+                    <option value="pb">Paraíba</option>
+                    <option value="pr">Paraná</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="pi">Piauí</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="rn">Rio Grande do Norte</option>
+                    <option value="rs">Rio Grande do Sul</option>
+                    <option value="ro">Rondônia</option>
+                    <option value="rr">Roraima</option>
+                    <option value="sc">Santa Catarina</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="se">Sergipe</option>
+                    <option value="to">Tocantins</option>
+                </select>
+                <div class="invalid-feedback">
+                    Insira um estado VÁLIDO.
+                </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                <label for="zip">CEP <a id="cep" href="https://buscacepinter.correios.com.br/app/endereco/index.php"><span class="text-muted">(NÃO SABE SEU CEP?)</span></a></label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                    O CEP é necessário
+                </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="same-address">
+                <label class="custom-control-label" for="same-address">O endereço de entrega é o mesmo que meu endereço de cobrança.</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="save-info">
+                <label class="custom-control-label" for="save-info">Salve esta informação para a próxima vez.</label>
+            </div>
+            <hr class="mb-4">
+    
+            <h4 class="mb-3">Pagamento</h4>
+    
+            <div class="d-block my-3">
+                <div class="custom-control custom-radio">
+                <input id="credito" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credito">Cartão de crédito</label>
+                </div>
+                <div class="custom-control custom-radio">
+                <input id="debito" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debito">Cartão de débito</label>
+                </div>
+                <div class="custom-control custom-radio">
+                <input id="pix" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="pix">Pix</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                <label for="cc-name">Nome</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Nome completo conforme exibido no cartão</small>
+                <div class="invalid-feedback">
+                    Nome no cartão é OBRIGATÓRIO!
+                </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                <label for="cc-number">Número do cartão</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                    Número no cartão é OBRIGATÓRIO!
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Data de Validade</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                    Data inválida
+                </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                <label for="cc-cvv">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <a href="https://www.mobills.com.br/blog/cartao-de-credito/cvv-do-cartao/"><small class="text-muted">Não sabe o que é o CVV? CLIQUE AQUI</small></a>
+                <div class="invalid-feedback">
+                    CVV é OBRIGATÓRIO!
+                </div>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit" onClick="window.open('compra-realizada.html')">COMPRAR</button>
+            </form>
+        </div>
+        </div>
+        </div>
+    </div>
+
+        <br><br><br><br><br>
+
+        <!--CHAMA O RODAPÉ-->
+        <div id="4"></div>
+        <!--script que carrega o html-->
+        <!--Função tem o nome url para dar load-->
+        <script>
+            load("footer.html");
+            function load(url)
+            {
+                req = new XMLHttpRequest();
+                req.open("GET", url, false);
+                req.send(null);
+                document.getElementById(4).innerHTML = req.responseText;
+            }
+        </script>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+</html>
